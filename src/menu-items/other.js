@@ -1,29 +1,34 @@
 // assets
-import { IconBrandChrome, IconHelp } from '@tabler/icons-react';
+import { IconBrandChrome, IconSettings, IconAffiliate } from '@tabler/icons-react';
 
-// constant
-const icons = { IconBrandChrome, IconHelp };
-
-// ==============================|| SAMPLE PAGE & DOCUMENTATION MENU ITEMS ||============================== //
+// ==============================|| Settings & External Links ||============================== //
 
 const other = {
-  id: 'sample-docs-roadmap',
+  id: 'settings-links-roadmap',
   type: 'group',
   children: [
     {
-      id: 'sample-page',
-      title: 'Sample Page',
+      id: 'integrations',
+      title: 'Integrations',
       type: 'item',
-      url: '/sample-page',
-      icon: icons.IconBrandChrome,
+      url: '/integrations',
+      icon: IconAffiliate,
       breadcrumbs: false
     },
     {
-      id: 'documentation',
-      title: 'Documentation',
+      id: 'settings-page',
+      title: 'Settings',
       type: 'item',
-      url: 'https://codedthemes.gitbook.io/berry/',
-      icon: icons.IconHelp,
+      url: '/settings-page',
+      icon: IconSettings,
+      breadcrumbs: false
+    },
+    {
+      id: 'extension-link',
+      title: 'Browser Extension',
+      type: 'item',
+      url: 'https://chromewebstore.google.com',
+      icon: IconBrandChrome,
       external: true,
       target: true
     }
